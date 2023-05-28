@@ -398,6 +398,7 @@ th {
 }
 
 .yelp {
-    background-image: url('image/yelp.png');
-    
+/*     background-image: url('image/yelp.png'); */
+    width: 24px;
+    height: 24px;
 }
