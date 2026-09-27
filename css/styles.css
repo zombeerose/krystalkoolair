@@ -321,7 +321,7 @@ th {
     margin-left: auto;
     margin-right: auto;
 }
-.w-nav-link.w--current {
+.w-nav-link.w-current {
     color: #0082f3;
 }
 .w-nav-menu {
@@ -337,7 +337,7 @@ th {
     right: 0;
     width: 100%;
 }
-.w-nav-overlay .w--nav-menu-open {
+.w-nav-overlay .w-nav-menu-open {
     top: 0;
 }
 .w-nav-button {
@@ -354,7 +354,7 @@ th {
     -ms-user-select: none;
     user-select: none;
 }
-.w-nav-button.w--open {
+.w-nav-button.w-open {
     background-color: #C8C8C8;
     color: white;
 }
