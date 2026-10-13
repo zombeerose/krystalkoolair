@@ -1,3 +1,7 @@
+/* BLUE: #173058 */
+/* RED: #cb1424 */
+
+
 html {
     height: 100%;
     -ms-text-size-adjust: 100%;
@@ -158,6 +162,11 @@ th {
         left: auto;
         right: auto;
     }
+
+    .slogan {
+        bottom: -30px;
+        right: 30px;
+    }
 }
 
 /* wider displays */
@@ -174,19 +183,27 @@ th {
     .w-col {
         width: 33.33333333%;
     }
+
+    .slogan {
+        bottom: 50px;
+        left: 10px;
+    }
 }
 .navigation-bar {
     background-color: white;
+    /*position: absolute;*/
+    /*bottom: 0;*/
 }
 
 .w-branding {
+    height: 200px;
     /*max-width: 100%;*/
     position: relative;
 }
-.w-branding img {
-    height: 275px;
-    width: 100%;
-}
+/*.w-branding img {*/
+/*    height: 275px;*/
+/*    width: 100%;*/
+/*}*/
 .w-branding h1,
 .w-branding h2,
 .w-branding p {
@@ -202,23 +219,59 @@ th {
     /*text-transform: uppercase;*/
 }
 .w-branding h1 {
-    bottom: 165px;
+    bottom: 95px;
     font-size: 100px;
     line-height: 50px;
-    right: 0em;
+    right: 0;
 }
 .w-branding h2 {
-    bottom: 120px;
-    right: 0em;
+    bottom: 50px;
+    right: 0;
 }
 .w-branding p {
-    bottom: 90px;
-    right: 0em;
+    bottom: 20px;
+    right: 0;
+}
+
+.slogan {
+    color: #173058;
+    /*bottom: 68px;*/
+    /*left: 10px;*/
+    position: absolute;
+}
+.slogan .today {
+    font-family: "Mr Dafoe", cursive;
+    font-size: 40px;
+    font-style: italic;
+}
+.slogan .tom {
+    margin: 13px 0 0 25px;
+    /*padding-left: 25px;*/
+    text-transform: uppercase;
+}
+
+.slogan .tom::after {
+    content: "";
+    position: absolute;
+    /* Positions the slash below the text */
+    left: 30px;
+    bottom: -10px;
+    width: 80%;
+    height: 12px; /* Maximum thickness of the slash */
+    background-color: #cb1424;
+
+    clip-path: ellipse(50% 50% at bottom);
+
+    /* Tilts the shape slightly to make it look like a dynamic slash/strike */
+    transform: rotate(-2deg);
+    /*z-index: -1; !* Places it behind the text if it overlaps *!*/
 }
 
 .logo-mask {
     /*mask-image: linear-gradient(to right, black 20%, transparent, transparent, black 100%);*/
     mask-image: linear-gradient(to left, transparent 5%, black 50%);
+    height: 275px;
+    width: 100%;
 }
 
 .service {
@@ -305,7 +358,8 @@ th {
 
 .section {
     position: relative;
-    padding-top: 40px;
+    /*padding-top: 40px;*/
+    padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 40px;
     padding-left: 10px;
